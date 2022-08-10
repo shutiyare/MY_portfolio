@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> My Portfolio</title>
+    <script src="https://kit.fontawesome.com/64b002c938.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@900&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@700&family=Inconsolata:wght@900&family=Poppins&family=Rubik+Moonrocks&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Inconsolata', monospace;
+    font-family: 'Poppins', sans-serif;
+}
+.containerr{
+    width: 100%;
+    height: 80px;
+    background-color: rgb(0, 17, 17);
+    position: static;
+    z-index: 1;
+    
+}
+.navigation{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.navigation span{
+    font-family: 'Edu NSW ACT Foundation', cursive;
+
+    font-family: 'Inconsolata', monospace;
+  
+    font-family: 'Poppins', sans-serif;
+  
+    font-family: 'Rubik Moonrocks', cursive;
+    font-size: 3rem;
+    padding: 10px;
+    color: rgb(221, 255, 0);
+    
+}
+.navigation ul{
+    display:flex;
+    justify-content: space-around;
+    padding: 10px;
+    align-items: center;
+
+}
+.navigation li{
+    list-style: none;
+}
+.navigation a{
+    text-decoration: none;
+    cursor: pointer;
+    margin: 20px;
+    font-size: 1.2rem;
+    color: rgb(2, 255, 234);
+    justify-content: space-around;
+}
+.hero{
+    width: 100%;
+    height:86vh;
+    background-color: rgb(0, 0, 123);
+    
+    position: relative;
+    
+}
+.hero_1{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.heros_1{
+    
+    padding: 20px;
+    color: wheat;
+    margin-top: 10px;
+}
+.heros_1 button{
+    width:90px;
+    height: 40px;
+    background-color: greenyellow;
+    font-size: 19px;
+    margin: 10px 40px;
+    font-weight: bold ;
+    border-radius: 7px;
+    border: 1px solid greenyellow;
+
+}
+.heros_1 button:hover{
+    background-color: rgb(0, 255, 221);
+}
+.cl{
+    padding: 20px;
+    margin-left: 20px;
+    line-break: 40px;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.heros_2{
+    position: relative;
+}
+.heros_2 img{
+    width: 450px;
+    height: 650px;
+    position:absolute;
+    right: 10px;
+    overflow: hidden;
+    
+}
+.about{
+    height: 80vh;
+    width:100%;
+    background-color:rgb(222, 0, 0);
+    margin-top: 10px;
+}
+.about h1{
+    text-align: center;
+    font-size: 3rem;
+    color: wheat;
+    margin-top: 10px;
+}
+.griid{
+    display:grid;
+    grid-template-columns: 1fr 2fr;
+}
+.grid_1 img{
+    margin: 10px;
+    width: 300px;
+    border-radius: 10%;
+    margin-left: 90px;
+}
+.grid_2{
+    background-color: #000;
+    width: 90%;
+    height: 450px;
+    border-radius: 20px;
+    margin-top: 20px;
+    text-align: left;
+}
+.grid_2:hover{
+    background-color: rgb(31, 1, 1);
+}
+.grid_2 p{
+    color: white;
+    padding: 20px;
+    font-size: 28px;
+}
+.services{
+    height: 80vh;
+    width:100%;
+    background-color:rgb(0, 0, 123);
+    margin-top: 10px;
+}
+.services h1{
+    text-align: center;
+    font-size: 3rem;
+    color: wheat;
+    margin-top: 10px;
+    
+}
+
+.gridd{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.item{
+    background-color: rgb(255, 198, 198);
+    width: 90%;
+    height: 530px;
+    border-radius: 20px;
+    margin: 10px;
+}
+.item img{
+    margin: 20px 100px;
+    width: 200px;
+    height: 180px;
+    
+    border-radius: 10px;
+}
+.item h3{
+    text-align: center;
+    font-size: 2rem;
+    color: rgb(18, 0, 82);
+    padding: 20px;
+}
+.item p{
+    font-size: 1.3rem;
+    color: rgb(18, 0, 82);
+    padding: 20px;
+}
+.contact{
+    height: 107vh;
+    width:100%;
+    background-color:rgb(0, 0, 123);
+    margin-top: 10px;
+}
+.contact h1{
+    text-align: center;
+    font-size: 3rem;
+    color: wheat;
+    margin-top: 10px;
+    
+}
+.grrid{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+.items{
+    background-color: rgb(255, 119, 119);
+    
+    color:#000;
+    border-radius: 10px;
+    padding: 10px;
+    margin:10px 30px;
+    font-size: 1rem;
+}
+.items p{
+    font-size: 1.5rem;
+}
+.items img{
+    width: 70px;
+    height: 70px;
+    color: #fff;
+}
+.ml{
+    display: inline-block;
+    font-size: 2rem;
+    padding: 10px;
+}
+.footer{
+    margin-top: 10px;
+    width: 100%;
+    height: 180px;
+    background-color: rgb(239, 0, 0);
+    color: white;
+    padding: 10px;
+}
+.flexee{
+    display: grid;
+    grid-template-columns:1fr 1fr ;
+}
+.flexee img{
+    width: 60px;
+    height: 60px;
+}
+.div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flexee h1,p{
+    color: white;
+    font-size: 2rem;
+}
+@media screen  and(max-width:768px){
+    .navigation{
+        width: 50%;
+        height: 40px;
+        display: inline-block;
+    }
+    .navigation span{
+        font-size: 10px;
+        padding:5px;
+        color: #fff;
+    }
+    .navigation ul li a{
+        display: flex;
+    }
+}
+</style>
+<body>
+    <div class="containerr">
+        <nav class="navigation">
+            <span>SHUTI YARE</span>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero_1">
+            <div class="heros_1">
+                <h1 class="cl">Hi i am,  </h1>
+                <p class="cl lg">Abdullahi Ali Tahliil. </p>
+                <p class="cl">i am <span>web developer</span> web developer </p>
+                <button>Hire me</button>
+                
+            </div>
+            <div class="heros_2">
+                <img src="./images/10 bg.png" alt="">
+            </div>
+        </div>
+    </section>
+    <!-- About me -->
+    <section class="about" id="about">
+        <h1>About</h1>
+        <div class="griid">
+            <div class="grid_1">
+                <img src="./images/2.jpeg" alt="">
+            </div>
+            <div class="grid_2">
+                
+                <p>I'm Abdullahi Ali TAhliil, Student At JUST university . </p>
+                <p>Full Stack Developer , freelancer based in Mogadisho City. </p>
+                <p>I learn Web Development and Mobile Development in Dugsiiye 
+                    Online Courses , Kaafiye Technology Center and Another Online Resources.</p>
+                
+                <p> I am proffisional web developer.</p>
+            </div>
+        </div>
+    </section>
+    <!-- My Services -->
+    <section class="services" id="services">
+        <h1>Our Services</h1>
+        <div class="gridd">
+            <div class="item">
+                <img src="https://cdn-icons-png.flaticon.com/512/4229/4229061.png" alt="">
+                <h3 >product Design</h3>
+                <p>I work with certain design tools to create high-fidelity designs and prototypes. I design accessible and usable products which aid business growth.</p>
+            </div>
+            <div class="item">
+                <img src="https://cdn-icons.flaticon.com/png/512/2864/premium/2864069.png?token=exp=1660060442~hmac=de3b4af762ac553c5d10f6c12c856a87" alt="">
+                <h3 >Web Development</h3>
+                <p>I work with certain design tools to create high-fidelity designs and prototypes. I design accessible and usable products which aid business growth.</p>
+            </div>
+            <div class="item">
+                <img src="https://cdn-icons-png.flaticon.com/512/6742/6742562.png" alt="">
+                <h3 >Mobile development</h3>
+                <p>I work with certain design tools to create high-fidelity designs and prototypes. I design accessible and usable products which aid business growth.</p>
+            </div>
+        </div>
+    </section>
+    <!-- contact me -->
+    <section class="contact" id="contact">
+        <h1>Contact me</h1>
+        <div class="grrid">
+            <div class="items"> <br>
+                <h2>Get in touch.</h2> <br>
+                <p>I am available to work on your projects and bring your ideas to life. I am just a click away.</p><br>
+                <img src="https://cdn-icons-png.flaticon.com/512/126/126509.png" class="ml" alt="">
+                <p class="ml"> +252615507298</p> <br> <br>
+                <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" class="ml" alt="">
+                <p class="ml">Shutiyare143@gmail.com</p> <br>
+                <a href="https://www.facebook.com/abdulahi.ali.71271"><img src="https://cdn-icons.flaticon.com/png/512/3670/premium/3670032.png?token=exp=1660058433~hmac=e3c37cfcc42d42afd69b9be65b84a115" class="ml" alt=""></a>
+                <a href="https://www.instagram.com/abdalla_shuti_yare/"><img src="https://cdn-icons.flaticon.com/png/512/3955/premium/3955024.png?token=exp=1660058474~hmac=1925f15c6cb8e40cd01aecbd77b62d9c" class="ml" alt=""></a>
+                <a href="https://api.whatsapp.com/send/?phone=252615507298&text&type=phone_number&app_absent=0"><img src="https://cdn-icons.flaticon.com/png/512/3670/premium/3670051.png?token=exp=1660058519~hmac=04d0ab7cc05e6f295cff2f88e243e615" class="ml"alt="">
+                
+            
+            </div>
+            <div class="items">
+                <form action="">
+                    <h1 class="text-center text-decoration-underline text-dark">Contact me</h1>
+     
+        
+          <h1 class="text-dark">Send message to me</h1>
+          <label for="inputEmail4" class="form-label">
+            First Name*
+          </label>
+          <input type="text" class="form-control" id="inputEmail4" />
+          <label for="inputPassword4" class="form-label">
+            Last Name*
+          </label>
+          <input
+            type="text"
+            class="form-control"
+            id="inputPassword4"
+          ></input>
+          <label for="inputEmail4" class="form-label">
+            Email Address*
+          </label>
+          <input type="email" class="form-control" id="inputEmail4" />
+          <label for="inputPassword4" class="form-label">
+            Phone Number*
+          </label>
+          <input
+            type="number"
+            class="form-control"
+            id="inputPassword4"
+          ></input>
+          <label for="inputPassword4" class="form-label">
+             Message*
+          </label>
+          
+  <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+          
+  <button type="submit" class="btn btn-dark m-5">Sign in</button>
+        </div>
+      </div>
+                </form>
+            </div>
+        
+    </section>
+
+    <!-- footer -->
+    <!-- <footer class="footer">
+        <div class="flexee">
+            <h1>welcome</h1>
+            <div class="imagess">
+            <a href="https://github.com/shutiyare"><img src="https://cdn-icons-png.flaticon.com/512/1051/1051326.png"  alt=""></a>
+            <a href="https://www.facebook.com/abdulahi.ali.71271"><img src="https://cdn-icons.flaticon.com/png/512/3670/premium/3670032.png?token=exp=1660058433~hmac=e3c37cfcc42d42afd69b9be65b84a115"  alt=""></a>
+        </div>
+
+        </div>
+    </footer> -->
+</body>
